@@ -64,7 +64,6 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Plugin.Workflow</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Description: In this file all other process specific files will be invoked. If an application exception occurs, the current transaction can be retried. If a BRE is thrown, the transaction will be skipped. Can be a flowchart or sequence. " DisplayName="ProcessTransaction" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -96,22 +95,22 @@
         <OutArgument x:TypeArguments="scg:IEnumerable(ui:QueueItem)" x:Key="out_DetailItem">[DetailItems]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 交通費記入 workflow" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SubProcess\交通費記入.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="交通費記入を呼び出し" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SubProcess\交通費記入.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
         <InArgument x:TypeArguments="scg:IEnumerable(ui:QueueItem)" x:Key="in_DetailItems">[DetailItems]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <sads:DebugSymbol.Symbol>d2VDOlxVc2Vyc1xNTlQtMDAwNzg1XERvd25sb2Fkc1xVaVBhdGhccHJvamVjdFxMb2NhbFxSb3V0ZVNlYXJjaFzkuqTpgJrosrvmpJzntKJf5pys5Yem55CGXFByb2Nlc3MueGFtbBFGA2sOAgEBTAVTDgIBFVQFWw4CARBcBWIdAgEJYwVpHQIBAlE0UUgCARhONU5GAgEWWUpZVQIBE1ZLVlMCARFgXWBqAgEPXlxeZAIBDV9PX2ACAQtcqQFcwgECAQpnXGdpAgEIZlxmZwIBBmVPZWMCAQRjsgFjyQECAQM=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d1dDOlxVc2Vyc1zmuIXmtbfkuIDogaFcVWlQYXRoXHByb2plY3RcUm91dGVTZWFyY2hc5Lqk6YCa6LK75qSc57SiX+acrOWHpueQhlxQcm9jZXNzLnhhbWwRRQNqDgIBAUsFUg4CARVTBVoOAgEQWwVhHQIBCWIFaB0CAQJQNFBIAgEYTTVNRgIBFlhKWFUCARNVS1VTAgERX11fagIBD11cXWQCAQ1eT15gAgELW6kBW8IBAgEKZlxmaQIBCGVcZWcCAQZkT2RjAgEEYqcBYr4BAgED</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="314.4,60" />
-      <sap2010:ViewStateData Id="InvokeWorkflowFile_3" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="InvokeWorkflowFile_2" sap:VirtualizedContainerService.HintSize="314.4,88" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="336.8,632.8">
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="314,62" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="314,62" />
+      <sap2010:ViewStateData Id="InvokeWorkflowFile_3" sap:VirtualizedContainerService.HintSize="314,86.6666666666667" />
+      <sap2010:ViewStateData Id="InvokeWorkflowFile_2" sap:VirtualizedContainerService.HintSize="314,86.6666666666667" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="336,636.666666666667">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -119,7 +118,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ProcessTransaction_1" sap:VirtualizedContainerService.HintSize="376.8,712.8" />
+      <sap2010:ViewStateData Id="ProcessTransaction_1" sap:VirtualizedContainerService.HintSize="376,716.666666666667" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
